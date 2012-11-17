@@ -11,7 +11,7 @@ however you like. I prefer sticking it in deps/ and running erl with `-pa deps/*
 it's up to you.
 
 As far as using it in code, there's two methods, `periodically:start` and `periodically:start_link`.
-The difference between them is analogous to `gen_server`. They take three arguments, a `gen_server`
+The difference between them is analogous to `gen_server`. They take three arguments, a `gen_server` name
 (passed straight in as the first argument to `gen_server:start(_link)/4`), a period in milliseconds,
 and a function. The function can either be an anonymous function or in the form `{Module,Method,Args}`.
 
